@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f6ec;
+}
+
+header .menu {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-responsivo{
+    display: none;
+}
+.itens-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.hamburguer{
+    display: none;
+}
+
+.itens:hover {
+    font-size: 22px;
+    transition: 0.3s ease;
+}
+
+.logi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hoster {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 10px;
+    background: rgb(255, 214, 61);
+    background: linear-gradient(90deg, rgba(255, 214, 61, 1) 0%, rgba(253, 157, 29, 1) 50%, rgba(252, 69, 189, 1) 100%);
+    width: 100px;
+    height: 30px;
+
+}
+input{
+    width: 300px;
+    height: 50px;
+    border: none;
+}
+.email{
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 50px;
+    background-color: #4169E1;
+    border-radius: 5px;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.container img {
+    width: 400px;
+    height: 450px;
+}
+
+.container-1 {
+    width: 600px;
+    height: auto;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.aprovacao{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(130, 127, 127);
+    font-size: 15px;
+}
+
+.texto h1 {
+    text-align: justify;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.texto p {
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(130, 127, 127);
+}
+
+
+.container-2 {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    align-items: center;
+    
+}
+
+.container-2 div {
+    position: absolute;
+    
+}
+
+.foto-1 {
+    z-index: 4;
+}
+
+.foto-2 {
+    z-index: 3;
+    transform: rotate(-10deg);
+}
+
+.foto-3 {
+    z-index: 2;
+    transform: rotate(-20deg);
+}
+
+.foto-4 {
+    z-index: 1;
+    transform: rotate(-30deg);
+}
+.roda{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 45%;
+}
+.roda-1{
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(130, 127, 127);
+    justify-content: center;
+}
+.roda-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.item{
+    cursor: pointer; 
+}
+.duvida p, b{
+cursor: pointer;
+}
+@media (max-width: 600px){
+   .itens-menu{
+    display: none;
+   }
+   .logi{
+    display: none;
+   }
+   .hamburguer{
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: fixed;
+   }
+   .menu-responsivo{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    
+   }
+   .itens-menu-2{
+    display: none;
+    background-color: #f6eaf3;
+    width: 0;
+    height: 100%;
+    transition: width 0.2s;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+   }
+   .itens{
+    margin-top: 70%;
+    
+   }
+   .menu-responsivo:hover .itens-menu-2{
+    display: block;
+    width: 40%;
+
+   }
+   .um{
+    width: 23px;
+    height: 4px;
+    background-color: black;
+   }
+   .dois{
+    width: 23px;
+    height: 4px;
+    background-color: black;
+   }
+   .tres{
+    width: 23px;
+    height: 4px;
+    background-color: black;
+   }
+   .container{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .roda    {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+   }
+   .roda-2{
+    display: flex;
+    justify-content: left;
+    
+   }
+   .container img {
+    width: 220px;
+    height: 260px;
+}
+.container-2 svg{
+    width: 220px;
+    height: 260px;
+}
+
+main{
+    width: auto;
+}
+.container-2{
+    justify-content: center;
+    width: auto;
+    height: 300px;
+}
+.container-1 h1{
+    font-size: 30px;
+    text-align: left;
+}
+.container-1 .texto p{
+        width: 300px;
+       
+}
+.container-1{
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 300px;
+    height: 50px;
+}
+.roda-1{
+    margin-top: 20px;
+}
+
+}
+@media (max-width: 1081px) and (min-width:600px ){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+       }
+      
+       .itens-menu{
+        display: none;
+       }
+       .logi{
+        display: none;
+       }
+       .hamburguer{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        position: fixed;
+       }
+       .menu-responsivo{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        
+       }
+       .itens-menu-2{
+        display: none;
+        background-color: #f6eaf3;
+        width: 0;
+        height: 100%;
+        transition: width 0.2s;
+        overflow: hidden;
+        text-align: center;
+        font-size: 20px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 5;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+       }
+       .itens{
+        margin-top: 70%;
+        
+       }
+       .menu-responsivo:hover .itens-menu-2{
+        display: block;
+        width: 40%;
+    
+       }
+       .um{
+        width: 23px;
+        height: 4px;
+        background-color: black;
+       }
+       .dois{
+        width: 23px;
+        height: 4px;
+        background-color: black;
+       }
+       .tres{
+        width: 23px;
+        height: 4px;
+        background-color: black;
+       }
+
+       .roda    {
+        display: flex;
+        gap: 30px;
+       }
+       main{
+        width: auto;
+        
+    }
+    .container-1{
+        margin-left: 10%;
+    }
+   
+    .container-1 h1{
+        font-size: 50px;
+        text-align: left;
+        width: auto;
+        
+    }
+    .container-1 .texto p{
+            width: 500px;
+           
+    }
+    .container-2{
+        justify-content: center;
+        width: auto;
+        
+    }
+}
